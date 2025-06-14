@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-14T10:23:07 CDT" name="Default suite" finished-at="2025-06-14T10:23:10 CDT" duration-ms="2875">
+    <groups>
+    </groups>
+    <test started-at="2025-06-14T10:23:07 CDT" name="Default test" finished-at="2025-06-14T10:23:10 CDT" duration-ms="2875">
+      <class name="apitest.CreateUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:07 CDT" name="setUp" finished-at="2025-06-14T10:23:08 CDT" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserCreationWithValidData(apiutilities.TestData)[pri:1, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:08 CDT" name="verifyUserCreationWithValidData" description="Validusercreation" data-provider="createdata" finished-at="2025-06-14T10:23:09 CDT" duration-ms="1741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[apiutilities.TestData@2eb79cbe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCreationWithValidData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:09 CDT" name="setUp" finished-at="2025-06-14T10:23:09 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserCreationWithMissingFirstName(apiutilities.TestData)[pri:2, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:09 CDT" name="verifyUserCreationWithMissingFirstName" description="MissinguserFirstName" data-provider="createdata" finished-at="2025-06-14T10:23:10 CDT" duration-ms="437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[apiutilities.TestData@2519026b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCreationWithMissingFirstName -->
+      </class> <!-- apitest.CreateUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

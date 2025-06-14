@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "Validusercreation",
+    "expectedStatusCode": 201,
+    "expectedStatusLine": "HTTP/1.1 201 Created",
+    "userCreateData": {
+      "userFirstName": "sahil",
+      "userLastName": "kora",
+      "userContactNumber": 1296098097,
+      "userEmailId": "sahil91@gmail.com",
+      "userAddress": {
+        "plotNumber": "pl-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode":12345
+      }
+    }
+  },
+  {
+    "scenario": "MissinguserFirstName",
+    "expectedStatusCode": 400,
+    "expectedStatusLine": "HTTP/1.1 400 Bad Request",
+    "userCreateData": {
+      "userFirstName": " ",  
+      "userLastName": "kora",
+      "userContactNumber": 1290698997,
+      "userEmailId": "sahil@gmail.com",
+      "userAddress": {
+        "plotNumber": "pl-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 12345
+      }
+    }
+  }
+]
