@@ -34,19 +34,29 @@ public class UserAPI {
 		Response response = givenWithAuth(username, password).contentType(ContentType.JSON).accept(ContentType.JSON)
 				.pathParam("userId", userId)
 				.body(payload).when()
-				.post(Routes.CREATE_USER);
+				.put(Routes.UPDATE_USER_BY_PUT);
 		return response;
 	}
-
-	public static Response updateUserByPatch(int userId, User payload, String username, String password) {
+//
+//	public static Response updateUserByPatch(int patchuserId, User payload, String username, String password) {
+//		Response response = givenWithAuth(username, password)
+//				.contentType(ContentType.JSON)
+//				.accept(ContentType.JSON)
+//				.pathParam("userId", patchuserId)
+//				.body(payload).when()
+//				.patch(Routes.UPDATE_USER_BY_PATCH);
+//		return response;
+//	}
+	public static Response updateUserByPatch(int userId, String patchBody, String username, String password) {
 		Response response = givenWithAuth(username, password)
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
 				.pathParam("userId", userId)
-				.body(payload).when()
-				.post(Routes.CREATE_USER);
+				.body(patchBody).when()
+				.patch(Routes.UPDATE_USER_BY_PATCH);
 		return response;
 	}
+
 
 	public static Response deleteUserById(int userId, String username, String password) {
 		Response response = givenWithAuth(username, password).pathParam("userId", userId).when()

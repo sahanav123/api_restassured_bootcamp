@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apitest.CreateUserTest">
+      <class name="apitest.PutTest">
         <methods>
           <include name="setUp"/>
-          <include name="verifyUserCreationWithValidData" invocation-numbers="0"/>
+          <include name="verifyUserUpdate" invocation-numbers="0"/>
+          <include name="verifyUserCreationWithMissingFirstName" invocation-numbers="0"/>
         </methods>
-      </class> <!-- apitest.CreateUserTest -->
+      </class> <!-- apitest.PutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

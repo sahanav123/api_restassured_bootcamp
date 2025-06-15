@@ -1,0 +1,19 @@
+[
+  {
+    "scenario": "updatinguserfirstname",
+    "expectedStatusCode": 200,
+    "expectedStatusLine": "HTTP/1.1 200 OK",
+    "userCreateData": {
+      "userFirstName": "firstnamepatchupdated"
+    }
+  },
+	{
+	      "scenario": "updatinguserlastname",
+	      "expectedStatusCode": 400,
+	      "expectedStatusLine": "HTTP/1.1 400 Bad Request",
+	      "userCreateData": {
+	        "userFirstName": "l"
+	      }
+	    }
+    
+]  

@@ -4,28 +4,10 @@
     "expectedStatusCode": 201,
     "expectedStatusLine": "HTTP/1.1 201 Created",
     "userCreateData": {
-      "userFirstName": "sahil",
+      "userFirstName": "chinnu",
       "userLastName": "kora",
-      "userContactNumber": 1296098097,
-      "userEmailId": "sahil91@gmail.com",
-      "userAddress": {
-        "plotNumber": "pl-no",
-        "street": "street",
-        "state": "state",
-        "country": "country",
-        "zipCode":12345
-      }
-    }
-  },
-  {
-    "scenario": "MissinguserFirstName",
-    "expectedStatusCode": 400,
-    "expectedStatusLine": "HTTP/1.1 400 Bad Request",
-    "userCreateData": {
-      "userFirstName": " ",  
-      "userLastName": "kora",
-      "userContactNumber": 1290698997,
-      "userEmailId": "sahil@gmail.com",
+      "userContactNumber": 1236098097,
+      "userEmailId": "chinnu9671@gmail.com",
       "userAddress": {
         "plotNumber": "pl-no",
         "street": "street",
@@ -34,5 +16,83 @@
         "zipCode": 12345
       }
     }
-  }
+  },
+  {
+    "scenario": "MissinguserFirstName",
+    "expectedStatusCode": 400,
+    "expectedStatusLine": "HTTP/1.1 400 Bad Request",
+    "userCreateData": {
+      "userFirstName": " ",
+      "userLastName": "kora",
+      "userContactNumber": 1240698997,
+      "userEmailId": "chinnuv@gmail.com",
+      "userAddress": {
+        "plotNumber": "pl-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 12345
+      }
+    }
+  },
+  {
+    "scenario": "updatingfirstname",
+    "expectedStatusCode": 200,
+    "expectedStatusLine": "HTTP/1.1 201 Created",
+    "userCreateData": {
+      "userFirstName": "chinnuk",
+      "userLastName": "kora",
+      "userContactNumber": 1236098097,
+      "userEmailId": "sahil9671@gmail.com",
+      "userAddress": {
+        "plotNumber": "pl-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 12345
+      }
+    }
+  },
+  {
+    "scenario": "MissinguserFirstNameput",
+    "expectedStatusCode": 400,
+    "expectedStatusLine": "HTTP/1.1 201 Created",
+    "userCreateData": {
+      "userFirstName": "",
+      "userLastName": "kora",
+      "userContactNumber": 1246098097,
+      "userEmailId": "sahil51@gmail.com",
+      "userAddress": {
+        "plotNumber": "pl-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 12345
+      }
+    }
+  },
+  {
+      "scenario": "updatinguserfirstname",
+	  "expectedStatusCode": 200,
+	     "expectedStatusLine": "HTTP/1.1 200 OK",
+	     "userCreateData": {
+	       "userFirstName": "changedpatch",
+		   "userLastName": "kora",
+		   "userEmailId": "existing3445@gmail.com",
+		   "userContactNumber": 1287654890
+	     }
+    },
+  	{
+  	      "scenario": "updatingfirstnamewithspecialchar",
+		  "expectedStatusCode": 400,
+		      "expectedStatusLine": "HTTP/1.1 400 Bad Request",
+		      "userCreateData": {
+		        "userFirstName": "6",
+				"userLastName": "kora",
+				"userEmailId": "existing345@gmail.com",
+				    "userContactNumber": 1287654890
+		      }
+  	    }
+      
+  
 ]

@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-14T10:23:07 CDT" name="Default suite" finished-at="2025-06-14T10:23:10 CDT" duration-ms="2875">
+  <suite started-at="2025-06-14T19:37:38 CDT" name="UserAPISuite" finished-at="2025-06-14T19:37:46 CDT" duration-ms="7691">
     <groups>
     </groups>
-    <test started-at="2025-06-14T10:23:07 CDT" name="Default test" finished-at="2025-06-14T10:23:10 CDT" duration-ms="2875">
-      <class name="apitest.CreateUserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:07 CDT" name="setUp" finished-at="2025-06-14T10:23:08 CDT" duration-ms="379" status="PASS">
+    <test started-at="2025-06-14T19:37:38 CDT" name="UserAPITestSequence" finished-at="2025-06-14T19:37:46 CDT" duration-ms="7691">
+      <class name="apitest.PutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.PutTest@2d29b4ee]" started-at="2025-06-14T19:37:44 CDT" name="setUp" finished-at="2025-06-14T19:37:44 CDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCreationWithValidData(apiutilities.TestData)[pri:1, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:08 CDT" name="verifyUserCreationWithValidData" description="Validusercreation" data-provider="createdata" finished-at="2025-06-14T10:23:09 CDT" duration-ms="1741" status="PASS">
+        <test-method signature="verifyUserCreationWithValidData(apiutilities.TestData)[pri:1, instance:apitest.PutTest@2d29b4ee]" started-at="2025-06-14T19:37:44 CDT" name="verifyUserCreationWithValidData" description="updatingfirstname" data-provider="createdata" finished-at="2025-06-14T19:37:45 CDT" duration-ms="668" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[apiutilities.TestData@2eb79cbe]]>
+                <![CDATA[apiutilities.TestData@71bb8b34]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCreationWithValidData -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:09 CDT" name="setUp" finished-at="2025-06-14T10:23:09 CDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.PutTest@2d29b4ee]" started-at="2025-06-14T19:37:45 CDT" name="setUp" finished-at="2025-06-14T19:37:45 CDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCreationWithMissingFirstName(apiutilities.TestData)[pri:2, instance:apitest.CreateUserTest@821330f]" started-at="2025-06-14T10:23:09 CDT" name="verifyUserCreationWithMissingFirstName" description="MissinguserFirstName" data-provider="createdata" finished-at="2025-06-14T10:23:10 CDT" duration-ms="437" status="PASS">
+        <test-method signature="verifyUserCreationWithMissingFirstName(apiutilities.TestData)[pri:2, instance:apitest.PutTest@2d29b4ee]" started-at="2025-06-14T19:37:45 CDT" name="verifyUserCreationWithMissingFirstName" description="MissinguserFirstNameput" data-provider="createdata" finished-at="2025-06-14T19:37:45 CDT" duration-ms="501" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[apiutilities.TestData@2519026b]]>
+                <![CDATA[apiutilities.TestData@7574d4ad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCreationWithMissingFirstName -->
+      </class> <!-- apitest.PutTest -->
+      <class name="apitest.CreateUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateUserTest@20b2475a]" started-at="2025-06-14T19:37:39 CDT" name="setUp" finished-at="2025-06-14T19:37:40 CDT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserCreationWithValidData(apiutilities.TestData)[pri:1, instance:apitest.CreateUserTest@20b2475a]" started-at="2025-06-14T19:37:40 CDT" name="verifyUserCreationWithValidData" description="Validusercreation" data-provider="createdata" finished-at="2025-06-14T19:37:43 CDT" duration-ms="3675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[apiutilities.TestData@11841b15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCreationWithValidData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.CreateUserTest@20b2475a]" started-at="2025-06-14T19:37:43 CDT" name="setUp" finished-at="2025-06-14T19:37:43 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserCreationWithMissingFirstName(apiutilities.TestData)[pri:2, instance:apitest.CreateUserTest@20b2475a]" started-at="2025-06-14T19:37:43 CDT" name="verifyUserCreationWithMissingFirstName" description="MissinguserFirstName" data-provider="createdata" finished-at="2025-06-14T19:37:44 CDT" duration-ms="460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[apiutilities.TestData@1b17d8ab]]>
               </value>
             </param>
           </params>
@@ -38,6 +70,38 @@
           </reporter-output>
         </test-method> <!-- verifyUserCreationWithMissingFirstName -->
       </class> <!-- apitest.CreateUserTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="apitest.PatchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.PatchTest@69ee81fc]" started-at="2025-06-14T19:37:45 CDT" name="setUp" finished-at="2025-06-14T19:37:45 CDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUserUpdateFirstname(apiutilities.TestData)[pri:1, instance:apitest.PatchTest@69ee81fc]" started-at="2025-06-14T19:37:45 CDT" name="verifyUserUpdateFirstname" description="updatinguserfirstname" data-provider="createdata" finished-at="2025-06-14T19:37:46 CDT" duration-ms="557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[apiutilities.TestData@6e8f2094]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserUpdateFirstname -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:apitest.PatchTest@69ee81fc]" started-at="2025-06-14T19:37:46 CDT" name="setUp" finished-at="2025-06-14T19:37:46 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUpdateUsernameWithSpecialChar(apiutilities.TestData)[pri:2, instance:apitest.PatchTest@69ee81fc]" started-at="2025-06-14T19:37:46 CDT" name="verifyUpdateUsernameWithSpecialChar" description="updatingfirstnamewithspecialchar" data-provider="createdata" finished-at="2025-06-14T19:37:46 CDT" duration-ms="455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[apiutilities.TestData@762bf32d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateUsernameWithSpecialChar -->
+      </class> <!-- apitest.PatchTest -->
+    </test> <!-- UserAPITestSequence -->
+  </suite> <!-- UserAPISuite -->
 </testng-results>

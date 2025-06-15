@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "updateonlyuserfirstnameinput",
+    "expectedStatusCode": 200,
+    "expectedStatusLine": "HTTP/1.1 200 OK",
+    "userCreateData": {
+      "userFirstName": "sanus",
+      "userLastName": "vuyy",
+      "userContactNumber": 1266843810,
+      "userEmailId": "sah394@gmail.com",
+      "userAddress": {
+        "plotNumber": "plot-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 12345
+      }
+    }
+  },
+  {
+    "scenario": "MissinguserFirstNameinPUT",
+    "expectedStatusCode": 400,
+    "expectedStatusLine": "HTTP/1.1 400 Bad Request",
+    "userCreateData": {
+      "userFirstName": " ",  
+      "userLastName": "vuyy",
+      "userContactNumber": 1266843810,
+      "userEmailId": "sah394@gmail.com",
+      "userAddress": {
+        "plotNumber": "plot-no",
+        "street": "street",
+        "state": "state",
+        "country": "country",
+        "zipCode": 12345
+      }
+    }
+  }
+]

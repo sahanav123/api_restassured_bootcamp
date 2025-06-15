@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UserAPISuite" parallel="false">
+  <test name="UserAPITestSequence">
+    <classes>
+      <class name="apitest.CreateUserTest"/>
+      <class name="apitest.PutTest"/>
+      <class name="apitest.PatchTest"/>
+    </classes>
+  </test>
+</suite>
